@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Local SEO Meta Tags -->
-    <title>Alabama Carports | Heavy-Duty Steel Structures Starting at $1,195</title>     <meta name="description" content="Premium Tennessee Steel carports, enclosed garages, and commercial buildings. Local display centers in Jasper, Bessemer, and Gardendale. Lock in your price today.">     <meta name="keywords" content="metal carports alabama, steel carports near me, enclosed garages birmingham, tennessee steel buildings alabama, cheap carports jasper al">          <!-- Local Business Schema Markup for Google Maps & Search -->     <script type="application/ld+json">     {       "@context": "https://schema.org",       "@type": "LocalBusiness",       "name": "Alabama Carports",       "image": "CP-OPEN-001-render.jpg",       "telephone": "205-544-3131",       "email": "alabamacarportguys@gmail.com",       "url": "https://www.alabamacarports.net",       "priceRange": "$$",
+    <title>Alabama Carports | Heavy-Duty Steel Structures Starting at $1,195</title>
+    <meta name="description" content="Premium Tennessee Steel carports, enclosed garages, and commercial buildings. Local display centers in Jasper, Bessemer, and Gardendale. Lock in your price today.">
+    <meta name="keywords" content="metal carports alabama, steel carports near me, enclosed garages birmingham, tennessee steel buildings alabama, cheap carports jasper al">
+    
+    <!-- Local Business Schema Markup for Google Maps & Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Alabama Carports",
+      "image": "CP-OPEN-001-render.jpg",
+      "telephone": "205-544-3131",
+      "email": "alabamacarportguys@gmail.com",
+      "url": "https://www.alabamacarports.net",
+      "priceRange": "$$",
       "description": "Authorized dealer of premium Tennessee Steel carports, enclosed garages, and custom commercial buildings serving the greater Birmingham and Jasper areas.",
       "areaServed": [
         "Jasper, AL",
@@ -180,3 +194,330 @@
         }
         .commercial-grid {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        .commercial-grid img {
+            border-radius: 5px;
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            border: 2px solid #333;
+        }
+
+        /* Trust & Info Section */
+        .trust-section {
+            padding: 4rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .trust-content {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid #cc0000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .trust-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .trust-content ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+        .trust-content li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Modal (Popup Form) with internal scrolling */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0,0,0,0.7); 
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto; 
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: #000;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .form-submit-btn {
+            width: 100%;
+            background-color: #cc0000;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-submit-btn:hover {
+            background-color: #aa0000;
+        }
+        .modal-header {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .price-badge { font-size: 1.4rem; padding: 10px 15px; }
+            .contact-phone { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Alabama Carports</div>
+        <a href="tel:2055443131" class="contact-phone">Call Us: 205-544-3131</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Heavy-Duty Steel Carports. Built for Alabama.</h1>
+        <p>Protect your vehicles and equipment with premium Tennessee Steel structures. Fast installation. Local service.</p>
+        
+        <div class="hero-image-container">
+            <div class="price-badge">Starts at $1,195</div>
+            <img src="CP-OPEN-001-render.jpg" alt="12x20x6 regular roof metal carport installed in Alabama">
+        </div>
+        
+        <button class="cta-button" onclick="openModal('12x20x6 Regular Carport - $1,195 Base')">Lock In This Price</button>
+        <p class="hero-fine-print">*Sale price applies to our standard 12x20x6 Regular Roof Carport. Installation included.</p>
+    </section>
+
+    <!-- Packages Section -->
+    <h2 class="section-title">Standard & Custom Configurations</h2>
+    <div class="packages-grid">
+        
+        <!-- Package 1 -->
+        <div class="package-card">
+            <img src="CP-SEMI-001.jpg" alt="Steel carport frame showing construction quality">
+            <div class="package-info">
+                <h3>The Essential Carport</h3>
+                <p>12x20 Base. Ideal for single cars, mowers, and standard driveway protection.</p>
+                <button class="cta-button" style="padding: 10px 20px; font-size: 1rem;" onclick="openModal('Essential Carport / Base Model')">Get Contract & 3D Quote</button>
+            </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package-card">
+            <img src="GA-FE-002-render.jpg" alt="Fully enclosed steel two-car garage">
+            <div class="package-info">
+                <h3>The Fully Enclosed Garage</h3>
+                <p>Dual roll-up doors, side entry. Maximum protection for your daily drivers.</p>
+                <button class="cta-button" style="padding: 10px 20px; font-size: 1rem;" onclick="openModal('Fully Enclosed 2-Car Garage')">Get 3D Quote for this Style</button>
+            </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+            <img src="GA-SE-002-render.jpg" alt="Large steel workshop and garage building">
+            <div class="package-info">
+                <h3>The Heavy-Duty Workshop</h3>
+                <p>Extra height and depth. Perfect for larger trucks, workshops, or equipment storage.</p>
+                <button class="cta-button" style="padding: 10px 20px; font-size: 1rem;" onclick="openModal('Heavy Duty Workshop')">Get 3D Quote for this Style</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commercial Section -->
+    <section class="commercial-section">
+        <h2 class="section-title">Ask us about our Commercial Buildings</h2>
+        <p>Need something larger than a standard garage? We design and install fully customized, heavy-duty steel structures for commercial, agricultural, and industrial use.</p>
+        
+        <div class="commercial-grid">
+            <img src="warehouse.jpg" alt="Custom commercial steel warehouse building">
+            <img src="workshop.jpg" alt="Open bay commercial steel workshop">
+            <img src="storage.jpg" alt="Fully enclosed fleet and RV storage steel building">
+        </div>
+        
+        <a href="tel:2055443131" class="cta-button">Call for a Custom Commercial Quote</a>
+    </section>
+
+    <!-- Trust / Info Section -->
+    <section class="trust-section">
+        <div class="trust-content">
+            <h3>Why Buy From Alabama Carports?</h3>
+            <ul>
+                <li><strong>Local Display Centers:</strong> Visit us in Jasper, Bessemer, or Gardendale.</li>
+                <li><strong>Tennessee Steel Authorized:</strong> We supply premium, American-made materials.</li>
+                <li><strong>Fast-Track Quotes:</strong> Submit your zip code and get an official 3D rendering and contract in minutes.</li>
+                <li><strong>Looking for a Shed?</strong> We are also your local experts for custom portable storage buildings.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alabama Carports. All rights reserved.</p>
+        <p>Contact: <a href="mailto:alabamacarportguys@gmail.com" style="color: #888; text-decoration: underline;">alabamacarportguys@gmail.com</a> | Phone: <a href="tel:2055443131" style="color: #888; text-decoration: underline;">205-544-3131</a></p>
+    </footer>
+
+    <!-- Lead Capture Modal (Using Web3Forms AJAX) -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3>Verify Territory & Get Your Contract</h3>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Submit your zip code to verify delivery and we will email your official 3D rendering and signature link.</p>
+            </div>
+            
+            <!-- Web3Forms AJAX Integration -->
+            <form id="carportForm">
+                <!-- IMPORTANT: Paste your actual Web3Forms access key below -->
+                <input type="hidden" name="access_key" value="3ce680d1-3ad3-46de-9352-892a02c92be9">
+                <input type="hidden" name="subject" value="New Carport Lead - Alabama Carports">
+                <input type="hidden" name="Requested_Model" id="requestedModelInput" value="">
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="Phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">Installation Zip Code</label>
+                    <input type="text" id="zip" name="Zip_Code" required>
+                </div>
+                <div class="form-group">
+                    <label for="surface">Installation Surface</label>
+                    <select id="surface" name="Surface_Type">
+                        <option value="Dirt/Gravel">Dirt / Gravel / Grass</option>
+                        <option value="Concrete Pad">Concrete Pad</option>
+                        <option value="Asphalt">Asphalt</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-submit-btn">Send My Contract</button>
+                <p id="formResult" style="display:none; text-align:center; margin-top:15px; font-weight:bold;"></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Modal Functionality
+        const modal = document.getElementById("leadModal");
+        const modelInput = document.getElementById("requestedModelInput");
+
+        function openModal(modelName) {
+            modelInput.value = modelName;
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close modal if user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Silent Background Form Submission (Bypasses McAfee)
+        const form = document.getElementById('carportForm');
+        const result = document.getElementById('formResult');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            
+            result.style.display = "block";
+            result.style.color = "#333";
+            result.innerHTML = "Sending...";
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.style.color = "green";
+                    result.innerHTML = "Success! We will email your contract shortly.";
+                    setTimeout(() => {
+                        closeModal();
+                        form.reset();
+                        result.style.display = "none";
+                    }, 3000);
+                } else {
+                    console.log(response);
+                    result.style.color = "red";
+                    result.innerHTML = "Error sending message. Please try again.";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.style.color = "red";
+                result.innerHTML = "Something went wrong! Please call us directly.";
+            });
+        });
+    </script>
+</body>
+</html>
