@@ -3,481 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Local SEO Meta Tags -->
-    <title>Alabama Carports | Heavy-Duty Steel Structures Starting at $1,195</title>
-    <meta name="description" content="Premium Tennessee Steel carports, enclosed garages, and commercial buildings. Local display centers in Jasper, Bessemer, and Gardendale. Lock in your price today.">
-    <meta name="keywords" content="metal carports alabama, steel carports near me, enclosed garages birmingham, tennessee steel buildings alabama, cheap carports jasper al">
-    
-    <!-- Local Business Schema Markup for Google Maps & Search -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Alabama Carports",
-      "image": "CP-OPEN-001-render.jpg",
-      "telephone": "205-544-3131",
-      "email": "alabamacarportguys@gmail.com",
-      "url": "https://www.alabamacarports.net",
-      "priceRange": "$$",
-      "description": "Authorized dealer of premium Tennessee Steel carports, enclosed garages, and custom commercial buildings serving the greater Birmingham and Jasper areas.",
-      "areaServed": [
-        "Jasper, AL",
-        "Bessemer, AL",
-        "Gardendale, AL",
-        "Birmingham, AL"
-      ]
-    }
-    </script>
-
-    <style>
-        /* Base Styles & Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Header */
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .contact-phone {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #ffcc00;
-            text-decoration: none;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 3rem 5%;
-            background-color: #fff;
-            border-bottom: 4px solid #ffcc00;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #1a1a1a;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 2rem;
-            max-width: 800px;
-        }
-        .hero-image-container {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-        .price-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #ffcc00;
-            color: #1a1a1a;
-            padding: 15px 25px;
-            border-radius: 5px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-        .hero-fine-print {
-            font-size: 0.9rem;
-            color: #777;
-            margin-top: 1rem;
-            font-style: italic;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #cc0000;
-            color: #fff;
-            padding: 15px 35px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
-            border: none;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #aa0000;
-        }
-
-        /* Packages Section */
-        .section-title {
-            text-align: center;
-            margin: 4rem 0 2rem;
-            font-size: 2rem;
-            color: #1a1a1a;
-        }
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 0 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .package-card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            padding-bottom: 1.5rem;
-        }
-        .package-card img {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-        }
-        .package-info {
-            padding: 1.5rem;
-        }
-        .package-info h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-        .package-info p {
-            color: #666;
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-        }
-
-        /* Commercial Section */
-        .commercial-section {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 4rem 5%;
-            margin-top: 4rem;
-            text-align: center;
-        }
-        .commercial-section .section-title {
-            color: #ffcc00;
-            margin-top: 0;
-        }
-        .commercial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-        }
-        .commercial-grid img {
-            border-radius: 5px;
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-            border: 2px solid #333;
-        }
-
-        /* Trust & Info Section */
-        .trust-section {
-            padding: 4rem 5%;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .trust-content {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 5px solid #cc0000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .trust-content h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        .trust-content ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
-        .trust-content li {
-            margin-bottom: 0.5rem;
-            color: #444;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #111;
-            color: #888;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-        }
-
-        /* Modal (Popup Form) with internal scrolling */
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1000; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            background-color: rgba(0,0,0,0.7); 
-        }
-        .modal-content {
-            background-color: #fff;
-            margin: 5% auto; 
-            padding: 2rem;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 500px;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-        }
-        .close-btn {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close-btn:hover {
-            color: #000;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        .form-submit-btn {
-            width: 100%;
-            background-color: #cc0000;
-            color: #fff;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .form-submit-btn:hover {
-            background-color: #aa0000;
-        }
-        .modal-header {
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .price-badge { font-size: 1.4rem; padding: 10px 15px; }
-            .contact-phone { display: none; }
-        }
-    </style>
+    <meta name="description" content="Alabama Carports offers premium Tennessee Steel products. Visit our display centers in Jasper, Bessemer, and Gardendale. Get a custom quote today!">
+    <meta name="keywords" content="Alabama carports, metal buildings, Tennessee Steel, Jasper, Bessemer, Gardendale, metal garages, carports">
+    <title>Alabama Carports | Premium Metal Buildings & Carports</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="logo">Alabama Carports</div>
-        <a href="tel:2055443131" class="contact-phone">Call Us: 205-544-3131</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white p-6 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-extrabold tracking-tight">Alabama Carports</h1>
+                <p class="text-blue-200 mt-1">Premium Tennessee Steel Products</p>
+            </div>
+            <div class="mt-4 md:mt-0 text-center md:text-right">
+                <p class="text-lg">Call Us: <a href="tel:205-544-3131" class="font-bold hover:text-blue-300 transition">205-544-3131</a></p>
+                <p class="text-sm mt-1"><a href="mailto:alabamacarportguys@gmail.com" class="hover:text-blue-300 transition">alabamacarportguys@gmail.com</a></p>
+            </div>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Heavy-Duty Steel Carports. Built for Alabama.</h1>
-        <p>Protect your vehicles and equipment with premium Tennessee Steel structures. Fast installation. Local service.</p>
-        
-        <div class="hero-image-container">
-            <div class="price-badge">Starts at $1,195</div>
-            <!-- Added SEO Alt Text -->
-            <img src="CP-OPEN-001-render.jpg" alt="12x20x6 regular roof metal carport installed in Alabama">
+    <!-- Hero / Featured Special Section -->
+    <section class="bg-blue-100 py-16 px-6 border-b border-blue-200">
+        <div class="max-w-6xl mx-auto text-center flex flex-col items-center">
+            <h2 class="text-4xl font-extrabold text-blue-900 mb-4">Protect Your Vehicles with the Best</h2>
+            <p class="text-xl mb-10 max-w-2xl text-gray-700">Durable, reliable, and built to last. We supply and install top-tier metal structures across Alabama.</p>
+            
+            <!-- Featured Pricing Card -->
+            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-red-600 inline-block text-center max-w-md w-full">
+                <span class="bg-red-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full mb-4 inline-block">Featured Special</span>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">12' x 20' x 6' Regular Style Carport</h3>
+                <p class="text-4xl font-black text-blue-900 mt-4">Base Price: $1,195</p>
+                <p class="text-sm text-gray-500 mt-4">*Delivery and installation included in most areas. Taxes and site prep not included.</p>
+                <a href="#quote-form" class="mt-6 inline-block w-full bg-blue-900 text-white font-bold py-3 px-4 rounded hover:bg-blue-800 transition shadow-md">Claim This Deal</a>
+            </div>
         </div>
-        
-        <button class="cta-button" onclick="openModal('12x20x6 Regular Carport - $1,195 Base')">Lock In This Price</button>
-        <p class="hero-fine-print">*Sale price applies to our standard 12x20x6 Regular Roof Carport. Installation included.</p>
     </section>
 
-    <!-- Packages Section -->
-    <h2 class="section-title">Standard & Custom Configurations</h2>
-    <div class="packages-grid">
-        
-        <!-- Package 1 -->
-        <div class="package-card">
-            <!-- Added SEO Alt Text -->
-            <img src="CP-SEMI-001.jpg" alt="Steel carport frame showing construction quality">
-            <div class="package-info">
-                <h3>The Essential Carport</h3>
-                <p>12x20 Base. Ideal for single cars, mowers, and standard driveway protection.</p>
-                <button class="cta-button" style="padding: 10px 20px; font-size: 1rem;" onclick="openModal('Essential Carport / Base Model')">Get Contract & 3D Quote</button>
+    <!-- Display Centers Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-10">Visit Our Local Display Centers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Location 1 -->
+                <div class="p-8 bg-gray-50 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <svg class="w-10 h-10 mx-auto text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Jasper</h3>
+                    <p class="text-gray-600">Stop by to see our quality construction firsthand and explore different roofing styles.</p>
+                </div>
+                <!-- Location 2 -->
+                <div class="p-8 bg-gray-50 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <svg class="w-10 h-10 mx-auto text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Bessemer</h3>
+                    <p class="text-gray-600">Browse our lot models and let us help you design the perfect custom structure.</p>
+                </div>
+                <!-- Location 3 -->
+                <div class="p-8 bg-gray-50 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <svg class="w-10 h-10 mx-auto text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Gardendale</h3>
+                    <p class="text-gray-600">Speak directly with our experts to discuss sizes, colors, and site preparation.</p>
+                </div>
             </div>
         </div>
-
-        <!-- Package 2 -->
-        <div class="package-card">
-            <!-- Added SEO Alt Text -->
-            <img src="GA-FE-002-render.jpg" alt="Fully enclosed steel two-car garage">
-            <div class="package-info">
-                <h3>The Fully Enclosed Garage</h3>
-                <p>Dual roll-up doors, side entry. Maximum protection for your daily drivers.</p>
-                <button class="cta-button" style="padding: 10px 20px; font-size: 1rem;" onclick="openModal('Fully Enclosed 2-Car Garage')">Get 3D Quote for this Style</button>
-            </div>
-        </div>
-
-        <!-- Package 3 -->
-        <div class="package-card">
-            <!-- Added SEO Alt Text -->
-            <img src="GA-SE-002-render.jpg" alt="Large steel workshop and garage building">
-            <div class="package-info">
-                <h3>The Heavy-Duty Workshop</h3>
-                <p>Extra height and depth. Perfect for larger trucks, workshops, or equipment storage.</p>
-                <button class="cta-button" style="padding: 10px 20px; font-size: 1rem;" onclick="openModal('Heavy Duty Workshop')">Get 3D Quote for this Style</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Commercial Section -->
-    <section class="commercial-section">
-        <h2 class="section-title">Ask us about our Commercial Buildings</h2>
-        <p>Need something larger than a standard garage? We design and install fully customized, heavy-duty steel structures for commercial, agricultural, and industrial use.</p>
-        
-        <div class="commercial-grid">
-            <!-- Added SEO Alt Text -->
-            <img src="warehouse.jpg" alt="Custom commercial steel warehouse building">
-            <img src="workshop.jpg" alt="Open bay commercial steel workshop">
-            <img src="storage.jpg" alt="Fully enclosed fleet and RV storage steel building">
-        </div>
-        
-        <a href="tel:2055443131" class="cta-button">Call for a Custom Commercial Quote</a>
     </section>
 
-    <!-- Trust / Info Section -->
-    <section class="trust-section">
-        <div class="trust-content">
-            <h3>Why Buy From Alabama Carports?</h3>
-            <ul>
-                <li><strong>Local Display Centers:</strong> Visit us in Jasper, Bessemer, or Gardendale.</li>
-                <li><strong>Tennessee Steel Authorized:</strong> We supply premium, American-made materials.</li>
-                <li><strong>Fast-Track Quotes:</strong> Submit your zip code and get an official 3D rendering and contract in minutes.</li>
-                <li><strong>Looking for a Shed?</strong> We are also your local experts for custom portable storage buildings.</li>
-            </ul>
+    <!-- Web3Forms Lead Capture Section -->
+    <section id="quote-form" class="py-16 px-6 bg-gray-100 border-t border-gray-200">
+        <div class="max-w-2xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">Request a Custom Quote</h2>
+            <p class="text-center text-gray-600 mb-8">Fill out the form below and we'll get back to you with pricing and details.</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="3ce680d1-3ad3-46de-9352-892a02c92be9">
+                <input type="hidden" name="subject" value="New Website Lead - AlabamaCarports.net">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" name="name" id="name" required class="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" required class="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" name="email" id="email" required class="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">What are you looking for? (Size, Style, Delivery Zip Code)</label>
+                    <textarea name="message" id="message" rows="4" required class="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <button type="submit" class="w-full bg-red-600 text-white font-bold py-3 px-4 rounded-md hover:bg-red-700 transition duration-300 shadow-md text-lg">Send My Quote Request</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Alabama Carports. All rights reserved.</p>
-        <p>Contact: <a href="mailto:alabamacarportguys@gmail.com" style="color: #888; text-decoration: underline;">alabamacarportguys@gmail.com</a> | Phone: <a href="tel:2055443131" style="color: #888; text-decoration: underline;">205-544-3131</a></p>
+    <footer class="bg-gray-900 text-gray-400 text-center py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="mb-2">&copy; 2026 Alabama Carports. All rights reserved.</p>
+            <p class="text-sm">alabamacarports.net | 205-544-3131</p>
+        </div>
     </footer>
 
-    <!-- Lead Capture Modal (Using Web3Forms) -->
-    <div id="leadModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div class="modal-header">
-                <h3>Verify Territory & Get Your Contract</h3>
-                <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">Submit your zip code to verify delivery and we will email your official 3D rendering and signature link.</p>
-            </div>
-            
-            <!-- Web3Forms Integration -->
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="apikey" value="3ce680d1-3ad3-46de-9352-892a02c92be9">
-                <input type="hidden" name="subject" value="New Carport Lead - Alabama Carports">
-                <input type="hidden" name="email" value="alabamacarportguys@gmail.com">
-                <input type="hidden" name="redirect" value="[https://www.alabamacarports.net](https://www.alabamacarports.net)">
-                <input type="hidden" name="Requested_Model" id="requestedModelInput" value="">
-                
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="Phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="Email_Address" required>
-                </div>
-                <div class="form-group">
-                    <label for="zip">Installation Zip Code</label>
-                    <input type="text" id="zip" name="Zip_Code" required>
-                </div>
-                <div class="form-group">
-                    <label for="surface">Installation Surface</label>
-                    <select id="surface" name="Surface_Type">
-                        <option value="Dirt/Gravel">Dirt / Gravel / Grass</option>
-                        <option value="Concrete Pad">Concrete Pad</option>
-                        <option value="Asphalt">Asphalt</option>
-                    </select>
-                </div>
-                <button type="submit" class="form-submit-btn">Send My Contract</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        // Modal Functionality
-        const modal = document.getElementById("leadModal");
-        const modelInput = document.getElementById("requestedModelInput");
-
-        function openModal(modelName) {
-            modelInput.value = modelName;
-            modal.style.display = "block";
-        }
-
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        // Close modal if user clicks outside of it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
